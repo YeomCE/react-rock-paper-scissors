@@ -2,8 +2,8 @@ import React from 'react'
 
 const Box = (props) => {
     let result;
-    if(props.title == 'Computer' && props.result !== 'tie' && props.result !== ''){
-        result = props.result == 'win' ? 'lose' : 'win'
+    if(props.title === 'Computer' && props.result !== 'tie' && props.result !== ''){
+        result = props.result === 'win' ? 'lose' : 'win'
     }
     else{
         result = props.result // You 박스일 경우 or 비겼을 경우 or 값이 있을 경우

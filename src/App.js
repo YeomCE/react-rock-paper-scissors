@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Box from './component/Box';
 import { useState } from 'react';
@@ -44,17 +43,17 @@ function App() {
   }
 
   const judgement = (user, com)=>{
-    if(user.name == com.name){
+    if(user.name === com.name){
       return "tie"
     }
-    else if(user.name == 'Rock'){
-      return com.name == 'Scissors' ? 'win' :  'lose';
+    else if(user.name === 'Rock'){
+      return com.name === 'Scissors' ? 'win' :  'lose';
     }
-    else if(user.name == 'Scissors'){
-      return com.name == 'Paper' ? 'win' :  'lose';
+    else if(user.name === 'Scissors'){
+      return com.name === 'Paper' ? 'win' :  'lose';
     }
-    else if(user.name == 'Paper'){
-      return com.name == 'Rock' ? 'win' :  'lose';
+    else if(user.name === 'Paper'){
+      return com.name === 'Rock' ? 'win' :  'lose';
     }
   }
 
